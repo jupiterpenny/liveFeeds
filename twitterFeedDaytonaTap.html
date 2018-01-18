@@ -1,0 +1,107 @@
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <style>
+        body{
+            background-color: #2a2f33;
+            cursor:none;
+            overflow: hidden;
+        }
+        #twitter-widget-0 {
+            width: 100% !important;
+        }
+
+        #twitter-widget-holder{
+            cursor:none;
+            text-align:center;
+            max-height:5200px;
+            max-width:2500px;
+            padding:20px;
+            background:#2a2f33;
+            border-radius:3px;
+            /*box-shadow:2px 2px 3px rgba(0,0,0,.1);*/
+        }
+
+
+.sizing{
+    font-size: 75px;
+}
+        @media screen and (max-width: 900px) {
+            .sizing {
+                font-size: 35px;
+            }
+        }
+    </style>
+</head>
+
+
+
+<body>
+
+
+<div style="color:white; font-family:cursive; text-align:center;  padding-top: 10%; ">
+
+    <h1 class="sizing"> Daytona Taproom Latest Tweets</h1>
+    <h2 class="sizing"> Tweet us a message</h2>
+    <h2 class="sizing"> and it will appear here!</h2>
+
+
+
+
+    <div id="twitter-widget-holder" style="text-align:center;padding-left: 25%;">
+        <a class="twitter-timeline"  href="https://twitter.com/hashtag/daytonataproom" data-widget-id="953053630508171264" height="4800">#daytonataproom Tweets<div style="cursor:none;"></div></a>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+            </div>
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+</body>
+<script>
+    window.onload = pageScroll;
+
+
+    function pageScroll() {
+        window.scrollBy(1, 50);
+        scrolldelay = setTimeout('pageScroll()', 1000);
+        /* Increase this # to slow down, decrease to speed up scrolling */
+
+    }
+
+
+
+
+    //auto scroll to bottom for iframes end
+
+
+    $(window).on("scroll", function() {
+        if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+            location.reload();
+        }
+    });
+
+    //instead of just auto top reload to refresh fetch :)
+
+
+
+</script>
+</html>
