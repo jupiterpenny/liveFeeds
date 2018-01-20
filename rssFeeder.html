@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+    <meta charset="UTF-8">
+    <title>Rss Feed</title>
+
+</head>
+<body>
+<div id="content"></div>
+
+
+<script type="text/javascript">
+
+
+    var k = window.location.toString();
+    var end = k.length;
+    var c = k.indexOf("?", 0);
+    var rssfeed = k.slice(c+1, end);
+    console.log(rssfeed, "rssfeed");
+    window.onload = pageScroll;
+
+    var api = "https://api.rss2json.com/v1/api.json?rss_url=";
+
+    var url = api + rssfeed;
+
+    function pageScroll() {
+        window.scrollBy(1, 50);
+        scrolldelay = setTimeout('pageScroll()', 1000);
+    }
+
+    $(window).on("scroll", function() {
+        if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+            window.scrollTo(0, 0);
+        }
+    });
+
+
+    var content = document.getElementById('content');
+
+    var xhr = new XMLHttpRequest();
+
+    xhr.onreadystatechange = function(){
+        if (xhr.readyState==4 && xhr.status==200)
+        {
+            var data = JSON.parse(xhr.responseText);
+            if(data.status == 'ok'){
+
+                var output = '<h1 style="text-align:center;">'+data.feed.title+'</h1>';
+
+                for(var i=0;i<data.items.length;++i){
+
+                    output += '<p><h2><a href="' +
+                        data.items[i].link + '" >' +
+                        data.items[i].title + '</h2></a><h3>' + data.items[i].content + '</h3><h5 style="color:orange;">' + data.items[i].pubDate + '</h5></p>';
+
+                }
+
+
+                content.innerHTML = output;
+                console.log(data);
+            }
+        }
+    };
+    xhr.open('GET', url ,true);
+    xhr.send();
+
+
+    //tester
+    //https://api.rss2json.com/v1/api.json?rss_url=http://www.news-journalonline.com/news?template=rss&mime=xml
+    // rss feed links
+    //http://www.news-journalonline.com/section/feed
+    //https://www.repeatsoftware.com/Help/RSSFeedList.htm
+</script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+<html>
+
+
+<head>
+    <!-- custom scrollbar CSS -->
+    <link rel="stylesheet" href="http://malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.min.css">
+    <!-- jQuery lib -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- custom scrollbar plugin script -->
+    <script src="http://malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<style>
+    body{
+        background-color: #2a2f33;
+    }
+    #twitter-widget-holder{
+        max-height:2200px;
+        max-width:900px;
+        padding:20px;
+        background:#2a2f33;
+        border-radius:3px;
+        /*box-shadow:2px 2px 3px rgba(0,0,0,.1);*/
+    }
+
+
+
+</style>
+</head>
+<body>
+
+
+
+
+<h1 style="color: white; font-family:cursive; font-size: 75px; padding-bottom: 50px; text-align:center;">Social Media</h1>
+<hr style="color: white; padding-top: 50px; text-align:center;">
+
+
+
+
+
+
+<div class="container-absolute">
+    <div class="row">
+            <div class="col-md-6">
+            <h1 style="text-align:center;color: white; font-family:cursive; font-size: 75px;">News</h1>
+            <div class="feedgrabbr_widget" id="fgid_7148002de79406f5e31a79a0e"></div>
+            <script>if (typeof (fg_widgets) === "undefined") fg_widgets = new Array(); fg_widgets.push("fgid_7148002de79406f5e31a79a0e");</script>
+            <script async src="https://www.feedgrabbr.com/widget/fgwidget.js"></script>
+        </div>
+
+        <div class="col-md-6">
+            <div id="twitter-widget-holder" style="text-align:center;">
+                <h1 style="color: white; font-family:cursive; font-size: 75px;">Twitter</h1>
+                <a class="twitter-timeline"
+                   data-dnt="true"
+                   data-height="2000"
+                   data-theme = "dark"
+                   href="https://twitter.com/hashtag/DaytonaTaproom"
+                   data-chrome="nofooter"
+                   chrome= "yes"
+                   scrolling="no"
+                   data-widget-id="950861608598822912"></a>
+                <br>
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+
+<div style="text-align:center;">
+    <h1 style="color: white; font-family:cursive; font-size: 75px;">Instagram</h1>
+    <a href="https://instawidget.net/v/user/daytonataproom"
+       id="link-a7313d195cbacec8a4c2d20316cd28400de30de181a4d5e5c3050736854fdedb"
+    ></a>
+    <script src="https://instawidget.net/js/instawidget.js?u=7f7b245f178c9611f607b31f874c668c16d3342e3c67f8021d3a8c8a45e2a152&width=700px"></script>
+</div>
+
+
+<!-- InstaWidget -->
+    <!--&lt;!&ndash;https://instawidget.net/generate&ndash;&gt;-->
+                    <!--twitterWidget-->
+    <!--https://twitter.com/settings/widgets/950861608598822912/edit?notice=WIDGET_UPDATED-->
+    <!--need to regenerate id from website-->
+    <!--this is alternative to authentication since authentication needs the web application (.com's no extensions, privacy policy as well as the usual client id and secret)-->
+
+
+
+    <script>
+
+        !function(d,s,id) {
+            var js,fjs=d.getElementsByTagName(s)[0],
+                p=/^http:/.test(d.location)?'http':'https';
+            if(!d.getElementById(id)){js=d.createElement(s);
+            js.id=id;js.src=p+"://platform.twitter.com/widgets.js";
+            fjs.parentNode.insertBefore(js,fjs);
+
+            }}
+
+            (document,"script","twitter-wjs");
+
+//twitter widget end
+
+
+        window.onload = pageScroll;
+
+
+        function pageScroll() {
+                window.scrollBy(1, 50);
+                scrolldelay = setTimeout('pageScroll()', 800);
+                /* Increase this # to slow down, decrease to speed up scrolling */
+
+        }
+
+//auto scroll to bottom for iframes end
+
+
+        $(window).on("scroll", function() {
+            if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+                location.reload();
+            }
+        });
+
+        //instead of just auto top reload to refresh fetch :)
+
+
+    </script>
+
+
+
+<!-- InstaWidget -->
+
+</body>
+</html>
+
+
+<!--https://www.repeatsoftware.com/Help/RSSFeedList.htm-->
+<!--news feeds-->
+<!--http://baleen.districtdatalabs.com/-->
+<!--random feeds-->
+<!--http://www.news-journalonline.com/section/feed-->
+<!--daytona rss feeds-->
+<!--https://feedgrabbr.com/widgets/-->
+<!--rss embedded generator 1free -->
+

@@ -1,0 +1,94 @@
+{
+
+  "icon": [
+    {
+      "name": "01d",
+      "pic": "./weatherIcons/sunny.png"
+    },
+
+    {
+      "name": "02d",
+      "pic": "./weatherIcons/partiallysunny.png"
+    },
+
+    {
+      "name": "03d",
+      "pic": "./weatherIcons/cloudy.png"
+    },
+
+    {
+      "name": "04d",
+      "pic": "./weatherIcons/cloudy.png"
+    },
+
+    {
+      "name": "09d",
+      "pic": "./weatherIcons/rainy.png"
+    },
+
+    {
+      "name": "10d",
+      "pic": "./weatherIcons/partlysunnynrainy.png"
+    },
+
+    {
+      "name": "11d",
+      "pic": "./weatherIcons/lightning.png"
+    },
+
+    {
+      "name": "13d",
+      "pic": "./weatherIcons/snowy.png"
+    },
+
+    {
+      "name": "50d",
+      "pic": "./weatherIcons/foggy.png"
+    },
+
+    {
+      "name": "01n",
+      "pic": "./weatherIcons/night.png"
+    },
+
+    {
+      "name": "02n",
+      "pic": "./weatherIcons/cloudy.png"
+    },
+
+    {
+      "name": "03n",
+      "pic": "./weatherIcons/cloudy.png"
+    },
+
+    {
+      "name": "04n",
+      "pic": "./weatherIcons/cloudy.png"
+    },
+
+    {
+      "name": "09n",
+      "pic": "./weatherIcons/rainy.png"
+    },
+
+    {
+      "name": "11n",
+      "pic": "./weatherIcons/lightning.png"
+    },
+
+    {
+      "name": "13n",
+      "pic": "./weatherIcons/snowy.png"
+    },
+
+    {
+      "name": "13n",
+      "pic": "./weatherIcons/foggy.png"
+    }
+
+
+
+
+  ]
+
+}
